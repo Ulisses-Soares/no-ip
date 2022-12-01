@@ -1,5 +1,5 @@
-![Docker Pulls](https://img.shields.io/docker/pulls/aanousakis/no-ip?style=plastic)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/aanousakis/no-ip/latest)
+![Docker Pulls](https://img.shields.io/docker/pulls/kwizatz/no-ip?style=plastic)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/kwizatz/no-ip/latest)
 
 # Tags
 
@@ -9,7 +9,7 @@
 
 # NO-IP Dynamic DNS Update Client
 
-A simple [Docker container](https://hub.docker.com/r/aanousakis/no-ip) for running the NO-IP dynamic DNS update script. It will keep current IP address in sync with your No-IP host or domain.
+A simple [Docker container](https://hub.docker.com/r/kwizatz/no-ip) for running the NO-IP dynamic DNS update script. It will keep current IP address in sync with your No-IP host or domain.
 
 ⚠️ Raspberry Pi users running 32 bit systems: The latest alpine update causes high cpu utilization. You can either use tag 1.0, which uses alpine:1.12 or [update libseccomp](https://github.com/alpinelinux/docker-alpine/issues/135#issuecomment-812287338)
 
@@ -40,7 +40,7 @@ First you have to install docker compose
 Then download docker-compose.yml file and the scripts to set Docker secrets. 
 
 ```bash
-git clone https://github.com/aanousakis/no-ip.git    
+git clone https://github.com/kwizatz/no-ip.git    
 cd no-ip/
 ```
 
@@ -60,11 +60,12 @@ The service if configured to restart if an error occurs.
 The image in Docker hub is build for the x86_64 architecture and cannot run on other platforms. If, for example, you want to run it on a host with arm architecture, you must build the image in that host.
 
 ```bash
-git clone https://github.com/aanousakis/no-ip.git    
+git clone https://github.com/kwizatz/no-ip.git    
 cd no-ip/
-docker build --tag=aanousakis/no-ip .
+docker build --tag=kwizatz/no-ip .
 
 ```
-## Author
+## CREDITS TO AUTHOR:
 
 * **Antony Anousakis**
+* https://github.com/aanousakis/
